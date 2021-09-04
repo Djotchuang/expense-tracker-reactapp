@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export default function AddTransaction() {
-  const { addTransaction } = useContext(GlobalContext);
+  const { addTransaction } = useContext(GlobalContext); // destructure addTransaction from the global context
 
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);

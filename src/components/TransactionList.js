@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 import Transaction from "./Transaction";
 
 export default function TransactionList() {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions } = useContext(GlobalContext); // destructure transactions (the state) from the global context
 
   return (
     <>

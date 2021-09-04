@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export default function IncomeExpenses() {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions } = useContext(GlobalContext); // destructure transactions (state) from the global context
 
   const amountList = transactions.map((transaction) => transaction.amount);
 
